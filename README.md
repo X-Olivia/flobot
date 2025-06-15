@@ -1,4 +1,5 @@
 # FloBot: Menstrual Cycle Assistant Robot
+Hi, I'm the developer of this project, my team mates made the lovely presentation video, you can watch it to know how it really look like. However, here's the introduction to help you understand the details well:
 
 ## Features
 
@@ -185,3 +186,5 @@
   - ROS network communication with Raspberry Pi
   - Shared MQTT broker
 
+## Future Plan
+- I will keep this project as my FYP:)
