@@ -1,0 +1,1432 @@
+[
+    {
+        "id": "17cb4a03.69f1b6",
+        "type": "tab",
+        "label": "Robot Control Flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9be2c3e6.2c064",
+        "type": "tab",
+        "label": "Menstrual Care Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "33c9266d.3feaea",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.148.187.227",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "21c6aed6.adbb82",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.148.187.227",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e8ad7a81.dbf3c8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f2a908fd.0ee548",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f3aa5846.826368",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "498b15b3.7111fc",
+        "type": "ui_group",
+        "name": "Record",
+        "tab": "f2a908fd.0ee548",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": "Start/End"
+    },
+    {
+        "id": "69e107a8.164d98",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.148.187.227",
+        "port": 1883,
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e044b580.7d2ab8",
+        "type": "ui_tab",
+        "z": "9be2c3e6.2c064",
+        "name": "Menstrual Care",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "6406b3db.e2836c",
+        "type": "ui_group",
+        "z": "9be2c3e6.2c064",
+        "name": "Period Control",
+        "tab": "e044b580.7d2ab8",
+        "order": 1,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b952b87a.68a578",
+        "type": "ui_group",
+        "z": "9be2c3e6.2c064",
+        "name": "Sensors Status",
+        "tab": "e044b580.7d2ab8",
+        "order": 2,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "efeb0265.8ee38",
+        "type": "ui_group",
+        "z": "9be2c3e6.2c064",
+        "name": "Robot Status",
+        "tab": "e044b580.7d2ab8",
+        "order": 4,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6dc2b477.88875c",
+        "type": "ui_group",
+        "z": "9be2c3e6.2c064",
+        "name": "Chat",
+        "tab": "e044b580.7d2ab8",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ec41e4dc.e3e598",
+        "type": "ui_group",
+        "z": "9be2c3e6.2c064",
+        "name": "Prediction",
+        "tab": "e044b580.7d2ab8",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "94f2ce2b.4eca2",
+        "type": "ui_group",
+        "z": "9be2c3e6.2c064",
+        "name": "Robot Control",
+        "tab": "e044b580.7d2ab8",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5295a054.fad81",
+        "type": "mqtt in",
+        "z": "17cb4a03.69f1b6",
+        "name": "Sensor Input",
+        "topic": "sensor/gesture",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "10.148.187.227",
+        "nl": false,
+        "rap": false,
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "ac93dd12.24a1d",
+                "c0d8795.c908088"
+            ]
+        ]
+    },
+    {
+        "id": "c0d8795.c908088",
+        "type": "function",
+        "z": "17cb4a03.69f1b6",
+        "name": "Format Message",
+        "func": "// Log the received message\nnode.log('Received message: ' + JSON.stringify(msg.payload));\n\n// Extract gesture from the message\nconst gesture = msg.payload.gesture;\n\n// Skip processing for No_Gesture\nif (gesture === 'No_Gesture') {\n    node.log('No_Gesture detected, no command to send');\n    return null; // Don't forward any message\n}\n\n// For Hover gesture, no need to forward to robot/command\n// as RealTimeGestureRecog2.py now handles the position logic\n// and sends directly to robot/command\nif (gesture === 'Hover') {\n    node.log('Hover gesture detected - RealTimeGestureRecog2.py will handle position switching');\n    // We can still forward to debug output if needed\n    msg.payload = {\n        gesture: gesture,\n        timestamp: new Date().toISOString(),\n        info: 'Position switching handled by gesture recognition script'\n    };\n    return [msg]; // Only send to debug, not to robot command\n}\n\n// Legacy code for handling other gestures (if any)\n// This will likely never execute with the new two-class model\nconst formattedMessage = {\n    gesture: gesture,\n    timestamp: new Date().toISOString()\n};\n\nmsg.payload = formattedMessage;\nnode.log('Formatted message: ' + JSON.stringify(msg.payload));\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 100,
+        "wires": [
+            [
+                "46319eaa.7b3fb"
+            ]
+        ]
+    },
+    {
+        "id": "9a39a789.a92458",
+        "type": "mqtt out",
+        "z": "17cb4a03.69f1b6",
+        "name": "Robot Command",
+        "topic": "robot/command",
+        "qos": "2",
+        "retain": false,
+        "respTopic": "",
+        "contentType": "application/json",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10.148.187.227",
+        "x": 380,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "be42f251.2eeff",
+        "type": "mqtt in",
+        "z": "17cb4a03.69f1b6",
+        "name": "Robot Acknowledgment",
+        "topic": "robot/ack",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "10.148.187.227",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "5415197e.1a49e8"
+            ]
+        ]
+    },
+    {
+        "id": "ac93dd12.24a1d",
+        "type": "debug",
+        "z": "17cb4a03.69f1b6",
+        "name": "Sensor Data Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "46319eaa.7b3fb",
+        "type": "debug",
+        "z": "17cb4a03.69f1b6",
+        "name": "Format Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5415197e.1a49e8",
+        "type": "debug",
+        "z": "17cb4a03.69f1b6",
+        "name": "Robot Acknowledgment Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6f50e2a.9c0ce1c",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Start Period",
+        "group": "6406b3db.e2836c",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "label": "Start",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "start",
+        "payloadType": "str",
+        "topic": "period/status",
+        "topicType": "str",
+        "x": 100,
+        "y": 20,
+        "wires": [
+            [
+                "3b1f24b3.404c7c"
+            ]
+        ]
+    },
+    {
+        "id": "b0fff9c4.8e8fc8",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "End Period",
+        "group": "6406b3db.e2836c",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "End",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "end",
+        "payloadType": "str",
+        "topic": "period/status",
+        "topicType": "str",
+        "x": 100,
+        "y": 60,
+        "wires": [
+            [
+                "3b1f24b3.404c7c"
+            ]
+        ]
+    },
+    {
+        "id": "5b1ee5da.cd734c",
+        "type": "mqtt in",
+        "z": "9be2c3e6.2c064",
+        "name": "Button Input",
+        "topic": "period/status",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "33c9266d.3feaea",
+        "nl": false,
+        "rap": false,
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "3b1f24b3.404c7c"
+            ]
+        ]
+    },
+    {
+        "id": "393c45a6.811c6a",
+        "type": "ui_text",
+        "z": "9be2c3e6.2c064",
+        "group": "6406b3db.e2836c",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Status Text",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 610,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3b1f24b3.404c7c",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "Handle Period Status",
+        "func": "const status = msg.payload;\nconst startButton = global.get('start_button') || {color: '', bgcolor: ''};\nconst endButton = global.get('end_button') || {color: '', bgcolor: ''};\n\nif (status === 'start') {\n    startButton.bgcolor = '#ff69b4';\n    endButton.bgcolor = '';\n    msg.payload = 'start';\n} else {\n    startButton.bgcolor = '';\n    endButton.bgcolor = '#ff69b4';\n    msg.payload = 'end';\n}\n\nglobal.set('start_button', startButton);\nglobal.set('end_button', endButton);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 160,
+        "wires": [
+            [
+                "393c45a6.811c6a",
+                "66db0ef3.3448b"
+            ]
+        ]
+    },
+    {
+        "id": "9c185f3c.da66",
+        "type": "ui_template",
+        "z": "9be2c3e6.2c064",
+        "group": "b952b87a.68a578",
+        "name": "LED Strips Status",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "format": "<div style='text-align: center'>\n    <div style='display: flex; flex-direction: column; align-items: center; gap: 30px'>\n        <div style='text-align: center'>\n            <h5>Mood Level</h5>\n            <div style='display: flex; justify-content: center; gap: 5px'>\n                <div ng-repeat='i in [0,1,2,3,4,5,6,7,8,9]'\n                    style='width: 20px; height: 20px; border-radius: 50%; background-color: {{(msg.payload && msg.payload.mood_leds && msg.payload.mood_leds[i]) ? \"#00bbf0\" : \"#cccccc\"}}'>\n                </div>\n            </div>\n            <p style='margin-top: 10px'>Current Mood: {{(msg.payload && msg.payload.mood) || 'None'}}</p>\n        </div>\n        <div style='text-align: center'>\n            <h5>Pain Level</h5>\n            <div style='display: flex; justify-content: center; gap: 5px'>\n                <div ng-repeat='i in [0,1,2,3,4,5,6,7,8,9]'\n                    style='width: 20px; height: 20px; border-radius: 50%; background-color: {{(msg.payload && msg.payload.pain_leds && msg.payload.pain_leds[i]) ? \"#ffbd39\" : \"#cccccc\"}}'>\n                </div>\n            </div>\n            <p style='margin-top: 10px'>Level: {{(msg.payload && msg.payload.pain_level) || 0}}/10</p>\n        </div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 390,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "617a638d.991cdc",
+        "type": "mqtt in",
+        "z": "9be2c3e6.2c064",
+        "name": "Mood Button Input",
+        "topic": "sensor/mood",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "21c6aed6.adbb82",
+        "nl": false,
+        "rap": false,
+        "x": 90,
+        "y": 420,
+        "wires": [
+            [
+                "335e2243.abe7de"
+            ]
+        ]
+    },
+    {
+        "id": "be697c86.5813b",
+        "type": "mqtt in",
+        "z": "9be2c3e6.2c064",
+        "name": "Pain Button Input",
+        "topic": "sensor/pain",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "33c9266d.3feaea",
+        "nl": false,
+        "rap": false,
+        "x": 80,
+        "y": 480,
+        "wires": [
+            [
+                "335e2243.abe7de"
+            ]
+        ]
+    },
+    {
+        "id": "44094136.f059f",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Increase Mood",
+        "group": "b952b87a.68a578",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "label": "Mood +",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"action\":\"increase\"}",
+        "payloadType": "json",
+        "topic": "sensor/mood",
+        "topicType": "str",
+        "x": 100,
+        "y": 540,
+        "wires": [
+            [
+                "335e2243.abe7de"
+            ]
+        ]
+    },
+    {
+        "id": "30c03f3.d57abc",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Reset Mood",
+        "group": "b952b87a.68a578",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "label": "Reset Mood",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"action\":\"reset\"}",
+        "payloadType": "json",
+        "topic": "sensor/mood",
+        "topicType": "str",
+        "x": 100,
+        "y": 580,
+        "wires": [
+            [
+                "335e2243.abe7de"
+            ]
+        ]
+    },
+    {
+        "id": "741e8266.c3a7bc",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Increase Pain",
+        "group": "b952b87a.68a578",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "label": "Pain +",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"action\":\"increase\"}",
+        "payloadType": "json",
+        "topic": "sensor/pain",
+        "topicType": "str",
+        "x": 100,
+        "y": 620,
+        "wires": [
+            [
+                "335e2243.abe7de"
+            ]
+        ]
+    },
+    {
+        "id": "662f0a23.153134",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Reset Pain",
+        "group": "b952b87a.68a578",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "label": "Reset Pain",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"action\":\"reset\"}",
+        "payloadType": "json",
+        "topic": "sensor/pain",
+        "topicType": "str",
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "335e2243.abe7de"
+            ]
+        ]
+    },
+    {
+        "id": "335e2243.abe7de",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "Process Sensor Data",
+        "func": "// Initialize the message if needed\nif (!msg.payload) {\n    // Handle page refresh - restore last known state\n    const lastState = flow.get('last_sensor_state') || {\n        mood_leds: Array(10).fill(0),\n        pain_leds: Array(10).fill(0),\n        mood: 'None',\n        pain_level: 0\n    };\n\n    return {\n        payload: lastState,\n        topic: 'sensor/status',\n        mood: lastState.mood,\n        pain: lastState.pain_level\n    };\n}\n\n// Get current states from flow context\nlet currentState = flow.get('last_sensor_state') || {\n    mood_leds: Array(10).fill(0),\n    pain_leds: Array(10).fill(0),\n    mood: 'None',\n    pain_level: 0\n};\n\n// Process mood data\nif (msg.topic === 'sensor/mood') {\n    if (msg.payload.action) {\n        // Handle dashboard button actions\n        if (msg.payload.action === 'increase') {\n            // Increase mood level (up to 10)\n            const currentCount = currentState.mood_leds.findIndex(led => led === 1);\n            const nextIndex = currentCount === -1 ? 0 : currentCount + 1;\n\n            if (nextIndex < 10) {\n                currentState.mood_leds = Array(10).fill(0);\n                currentState.mood_leds[nextIndex] = 1;\n\n                // Update mood text based on LED count\n                const moodMap = ['Calm', 'Happy', 'Excited', 'Anxious', 'Sad', 'Tired', 'Irritated', 'Angry', 'Depressed', 'Stressed'];\n                currentState.mood = moodMap[nextIndex] || 'None';\n\n                // Publish to MQTT\n                msg.mqtt = {\n                    topic: 'sensor/mood',\n                    payload: {\n                        timestamp: new Date().toISOString(),\n                        level: nextIndex + 1,\n                        mood: currentState.mood,\n                        leds: currentState.mood_leds\n                    }\n                };\n            }\n        } else if (msg.payload.action === 'reset') {\n            currentState.mood_leds = Array(10).fill(0);\n            currentState.mood = 'None';\n\n            // Publish reset to MQTT\n            msg.mqtt = {\n                topic: 'sensor/mood',\n                payload: {\n                    timestamp: new Date().toISOString(),\n                    level: 0,\n                    mood: 'None',\n                    leds: currentState.mood_leds\n                }\n            };\n        }\n    } else {\n        // Handle hardware MQTT messages\n        currentState.mood_leds = msg.payload.leds;\n        currentState.mood = msg.payload.mood;\n    }\n}\n\n// Process pain data\nif (msg.topic === 'sensor/pain') {\n    if (msg.payload.action) {\n        // Handle dashboard button actions\n        if (msg.payload.action === 'increase') {\n            const currentCount = currentState.pain_leds.findIndex(led => led === 1);\n            const nextIndex = currentCount === -1 ? 0 : currentCount + 1;\n\n            if (nextIndex < 10) {\n                currentState.pain_leds = Array(10).fill(0);\n                currentState.pain_leds[nextIndex] = 1;\n                currentState.pain_level = nextIndex + 1;\n\n                // Publish to MQTT\n                msg.mqtt = {\n                    topic: 'sensor/pain',\n                    payload: {\n                        timestamp: new Date().toISOString(),\n                        level: currentState.pain_level,\n                        leds: currentState.pain_leds\n                    }\n                };\n            }\n        } else if (msg.payload.action === 'reset') {\n            currentState.pain_leds = Array(10).fill(0);\n            currentState.pain_level = 0;\n\n            // Publish reset to MQTT\n            msg.mqtt = {\n                topic: 'sensor/pain',\n                payload: {\n                    timestamp: new Date().toISOString(),\n                    level: 0,\n                    leds: currentState.pain_leds\n                }\n            };\n        }\n    } else {\n        // Handle hardware MQTT messages\n        currentState.pain_leds = msg.payload.leds;\n        currentState.pain_level = msg.payload.level;\n    }\n}\n\n// Store complete state in flow context\nflow.set('last_sensor_state', currentState);\n\n// Create output message\nreturn [{\n    payload: currentState,\n    topic: 'sensor/status',\n    mood: currentState.mood,\n    pain: currentState.pain_level,\n    mqtt: msg.mqtt  // Pass through MQTT message if exists\n}];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Initialize flow variables with empty state\nconst initialState = {\n    mood_leds: Array(10).fill(0),\n    pain_leds: Array(10).fill(0),\n    mood: 'None',\n    pain_level: 0\n};\n\nflow.set('last_sensor_state', initialState);",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 380,
+        "wires": [
+            [
+                "9c185f3c.da66",
+                "66db0ef3.3448b",
+                "17f62085.f64e7f"
+            ]
+        ]
+    },
+    {
+        "id": "17f62085.f64e7f",
+        "type": "mqtt out",
+        "z": "9be2c3e6.2c064",
+        "name": "Publish Sensor Updates",
+        "topic": "",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "21c6aed6.adbb82",
+        "x": 430,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "860b05a.88e0df8",
+        "type": "ui_template",
+        "z": "9be2c3e6.2c064",
+        "group": "efeb0265.8ee38",
+        "name": "RealSense Camera",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "format": "<div style='width: 100%; height: 100%'>\n    <img src='{{msg.payload}}' style='max-width: 100%; max-height: 100%; object-fit: contain'>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 90,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66db0ef3.3448b",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "Process Period Data",
+        "func": "// Get records, load from file if flow context is empty\nlet records = flow.get('records');\nif (!records) {\n    const loadRecords = global.get('loadRecords');\n    if (loadRecords) {\n        records = loadRecords();\n        flow.set('records', records);\n    } else {\n        records = [];\n    }\n}\n\n// Handle empty message (page refresh)\nif (!msg.payload && !msg.topic) {\n    return { payload: records };\n}\n\nconst today = new Date().toISOString().split('T')[0];\nlet todayIndex = records.findIndex(r => r.id === today);\n\nif (todayIndex !== -1) {\n    let record = records[todayIndex];\n\n    if (msg.topic === 'period/status') {\n        record.button_status = msg.payload;\n        record.date = new Date().toISOString(); \n    } else if (msg.topic === 'sensor/status') {\n        record.pain = msg.pain;\n        record.mood = msg.mood;\n        record.date = new Date().toISOString(); \n    }\n\n    records[todayIndex] = record;\n\n} else {\n    let newRecord = {\n        id: today,\n        date: new Date().toISOString(),\n        button_status: msg.topic === 'period/status' ? msg.payload : null,\n        pain: msg.topic === 'sensor/status' ? msg.pain : null,\n        mood: msg.topic === 'sensor/status' ? msg.mood : null\n    };\n\n    records.push(newRecord);\n}\n\n// Sort records by date (newest first) and keep only last 10\nrecords.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());\nrecords = records.slice(0, 10);\n\n// Save to file\nconst saveRecords = global.get('saveRecords');\nif (saveRecords) {\n    saveRecords(records);\n}\n\nflow.set('records', records);\nmsg.payload = records;\nreturn [msg, msg];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 500,
+        "wires": [
+            [
+                "b7a33148.ff2c5"
+            ],
+            [
+                "158234a.756a8cb"
+            ]
+        ]
+    },
+    {
+        "id": "d57e2c8.cb7e6d",
+        "type": "mqtt in",
+        "z": "9be2c3e6.2c064",
+        "name": "Camera Stream Input",
+        "topic": "camera/rgb",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "10.148.187.227",
+        "nl": false,
+        "rap": false,
+        "x": 100,
+        "y": 980,
+        "wires": [
+            [
+                "d76b2379.f889f",
+                "c4937c3d.9b0dd"
+            ]
+        ]
+    },
+    {
+        "id": "d76b2379.f889f",
+        "type": "debug",
+        "z": "9be2c3e6.2c064",
+        "name": "Camera Stream Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "c4937c3d.9b0dd",
+        "type": "ui_template",
+        "z": "9be2c3e6.2c064",
+        "group": "efeb0265.8ee38",
+        "name": "RealSense Camera",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "format": "<div style='width: 100%; height: 100%; text-align: center;'>\n    <h4>RealSense Camera Stream</h4>\n    <div style='width: 100%; height: 300px; overflow: hidden;'>\n        <img src='data:image/jpeg;base64,{{msg.payload.image}}' style='max-width: 100%; max-height: 100%; object-fit: contain;'>\n    </div>\n    <div style='font-size: 12px; color: #666; margin-top: 5px;'>\n        Resolution: {{msg.payload.width}}x{{msg.payload.height}} | Last update: {{msg.payload.timestamp | date:'HH:mm:ss'}}\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 370,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7a33148.ff2c5",
+        "type": "ui_template",
+        "z": "9be2c3e6.2c064",
+        "group": "6406b3db.e2836c",
+        "name": "Records Table",
+        "order": 4,
+        "width": 6,
+        "height": 6,
+        "format": "<style>\n.records-table {\n    width: 100%;\n    border-collapse: collapse;\n    margin-top: 10px;\n}\n.records-table th, .records-table td {\n    border: 1px solid #ddd;\n    padding: 8px;\n    text-align: left;\n}\n.records-table th {\n    background-color: #f5f5f5;\n}\n.records-table tr:nth-child(even) {\n    background-color: #f9f9f9;\n}\n.delete-button {\n    background-color: #0094CE;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    padding: 4px 8px;\n    cursor: pointer;\n}\n</style>\n<div style='max-height: 300px; overflow-y: auto;'>\n    <table class='records-table'>\n        <thead>\n            <tr>\n                <th>Date</th>\n                <th>Status</th>\n                <th>Pain</th>\n                <th>Mood</th>\n                <th>Delete</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr ng-repeat='record in msg.payload'>\n                <td>{{record.date | date:'yyyy-MM-dd HH:mm'}}</td>\n                <td>{{record.button_status || 'Normal'}}</td>\n                <td>{{record.pain !== null ? record.pain : 'N/A'}}</td>\n                <td>{{record.mood !== null ? record.mood : 'N/A'}}</td>\n                <td><button class='delete-button' ng-click=\"send({payload: { delete: true, date: record.date }})\">Delete</button></td>\n            </tr>\n        </tbody>\n    </table>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1020,
+        "y": 180,
+        "wires": [
+            [
+                "b428158e.7c9a78"
+            ]
+        ]
+    },
+    {
+        "id": "b428158e.7c9a78",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "handle_record_delete",
+        "func": "let records = flow.get('records') || [];\n\nif (msg.payload.delete && msg.payload.date) {\n    const targetDate = msg.payload.date;\n    records = records.filter(r => r.date !== targetDate);\n    \n    // Save to file\n    const saveRecords = global.get('saveRecords');\n    if (saveRecords) {\n        saveRecords(records);\n    }\n    \n    flow.set('records', records);\n    \n    // Reset mood and pain states\n    const resetState = {\n        mood_leds: Array(10).fill(0),\n        pain_leds: Array(10).fill(0),\n        mood: 'None',\n        pain_level: 0\n    };\n    \n    // Store reset state\n    flow.set('last_sensor_state', resetState);\n    \n    // Create MQTT messages for reset\n    const moodResetMsg = {\n        topic: 'sensor/mood',\n        payload: {\n            action: 'reset'\n        }\n    };\n    \n    const painResetMsg = {\n        topic: 'sensor/pain',\n        payload: {\n            action: 'reset'\n        }\n    };\n    \n    // Return both the updated records and reset messages\n    return [\n        {payload: records},\n        moodResetMsg,\n        painResetMsg,\n        {payload: records}  // Add fourth output for prediction update\n    ];\n}\n\nreturn [null, null, null, null];",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 380,
+        "wires": [
+            [
+                "b7a33148.ff2c5"
+            ],
+            [
+                "335e2243.abe7de"
+            ],
+            [
+                "335e2243.abe7de"
+            ],
+            [
+                "158234a.756a8cb"
+            ]
+        ]
+    },
+    {
+        "id": "4825aa98.14f9c4",
+        "type": "ui_text_input",
+        "z": "9be2c3e6.2c064",
+        "name": "Chat Input",
+        "label": "Talk with Flobot",
+        "tooltip": "",
+        "group": "6dc2b477.88875c",
+        "order": 2,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "str",
+        "x": 90,
+        "y": 800,
+        "wires": [
+            [
+                "189859ca.129926"
+            ]
+        ]
+    },
+    {
+        "id": "189859ca.129926",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "Prepare LLM Request",
+        "func": "msg.headers = {\n    'Authorization': 'Bearer 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',\n    'HTTP-Referer': 'http://localhost',\n    'Content-Type': 'application/json'\n};\n\nmsg.url = 'https://openrouter.ai/api/v1/chat/completions';\nmsg.method = 'POST';\n\n// Get chat history from flow or initialize it\nlet chatHistory = flow.get('chatHistory') || [];\n\n// Add user message to history\nchatHistory.push({role: 'user', content: msg.payload});\n\n// Keep only last 10 messages to avoid context length issues\nif (chatHistory.length > 10) {\n    chatHistory = chatHistory.slice(-10);\n}\n\n// Store updated history\nflow.set('chatHistory', chatHistory);\n\n// Prepare the API request\nmsg.payload = {\n    'model': 'openai/gpt-3.5-turbo',\n    'messages': chatHistory\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 800,
+        "wires": [
+            [
+                "263086ed.f48b4a"
+            ]
+        ]
+    },
+    {
+        "id": "263086ed.f48b4a",
+        "type": "http request",
+        "z": "9be2c3e6.2c064",
+        "name": "Call OpenRouter API",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "x": 480,
+        "y": 800,
+        "wires": [
+            [
+                "c0a14bfc.5275b8"
+            ]
+        ]
+    },
+    {
+        "id": "c0a14bfc.5275b8",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "Process LLM Response",
+        "func": "if (msg.statusCode === 200 && msg.payload.choices && msg.payload.choices[0]) {\n    const response = msg.payload.choices[0].message.content;\n    \n    // Get chat history\n    let chatHistory = flow.get('chatHistory') || [];\n    \n    // Add AI response to history\n    chatHistory.push({role: 'assistant', content: response});\n    \n    // Keep only last 10 messages\n    if (chatHistory.length > 10) {\n        chatHistory = chatHistory.slice(-10);\n    }\n    \n    // Store updated history\n    flow.set('chatHistory', chatHistory);\n    \n    // Format messages for display\n    const formattedHistory = chatHistory.map(msg => ({\n        type: msg.role === 'user' ? 'user' : 'bot',\n        text: msg.content\n    }));\n    \n    // Return both the chat history and an empty message to clear the input\n    return [\n        {payload: formattedHistory},\n        {payload: ''}  // Empty message to clear the input field\n    ];\n} else {\n    return [\n        {payload: [{type: 'bot', text: 'Sorry, there was an error processing your request.'}]},\n        {payload: ''}  // Empty message to clear the input field\n    ];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 800,
+        "wires": [
+            [
+                "65425b08.428874"
+            ],
+            [
+                "4825aa98.14f9c4"
+            ]
+        ]
+    },
+    {
+        "id": "65425b08.428874",
+        "type": "ui_template",
+        "z": "9be2c3e6.2c064",
+        "group": "6dc2b477.88875c",
+        "name": "",
+        "order": 1,
+        "width": "6",
+        "height": "8",
+        "format": "<div style='height: 300px; overflow-y: auto; padding: 10px; background: #f5f5f5; border-radius: 5px;'>\n    <div ng-repeat='msg in msg.payload' \n         style='margin: 5px 0; padding: 8px; border-radius: 8px;'\n         ng-style='msg.type === \"user\" ? \n                  {\"background-color\": \"#DCF8C6\", \"margin-left\": \"20%\"} : \n                  {\"background-color\": \"#E8E8E8\", \"margin-right\": \"20%\"}'>\n        <strong>{{msg.type === \"user\" ? \"You\" : \"AI\"}}:</strong>\n        <div style='white-space: pre-wrap;'>{{msg.text}}</div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 870,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "158234a.756a8cb",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "Calculate Prediction",
+        "func": "// Predictive LED ring display logic\n\nfunction getPeriodColor(dayInCycle, periodLength = 6) {\n    if (dayInCycle <= periodLength) return '#f47c7c';    // Menstrual period - soft red\n    if (dayInCycle <= 13) return '#a1de93';              // Follicular phase - soft green\n    if (dayInCycle <= 16) return '#f7f48b';              // Ovulation phase - soft yellow\n    return '#70a1d7';                                    // Luteal phase - soft blue\n}\n\nfunction calculateCycleDay(records) {\n    if (!records || records.length === 0) {\n        return { cycleDay: 0, hasValidData: false };\n    }\n\n    // Sort by date descending\n    records.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());\n\n    const today = new Date();\n    today.setHours(0, 0, 0, 0);\n\n    const lastStart = records.find(r => r.button_status === 'start');\n    const lastEnd = records.find(r => r.button_status === 'end');\n\n    if (!lastStart && !lastEnd) {\n        return { cycleDay: 0, hasValidData: false };\n    }\n\n    if (lastStart) {\n        const startDate = new Date(lastStart.date);\n        startDate.setHours(0, 0, 0, 0);\n        const hasEndAfterStart = lastEnd && new Date(lastEnd.date).getTime() > startDate.getTime();\n\n        if (!hasEndAfterStart) {\n            const daysSinceStart = Math.floor((today.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) + 1;\n            return {\n                cycleDay: daysSinceStart,\n                hasValidData: true,\n                inPeriod: true\n            };\n        }\n    }\n\n    if (lastEnd && (!lastStart || new Date(lastEnd.date).getTime() > new Date(lastStart.date).getTime())) {\n        const endDate = new Date(lastEnd.date);\n        endDate.setHours(0, 0, 0, 0);\n        const daysSinceEnd = Math.floor((today.getTime() - endDate.getTime()) / (1000 * 60 * 60 * 24));\n        return {\n            cycleDay: daysSinceEnd + 7,  // Assume follicular starts 1 day after end\n            hasValidData: true,\n            inPeriod: false\n        };\n    }\n\n    return { cycleDay: 0, hasValidData: false };\n}\n\n// Fetch stored records\nlet records = flow.get('records') || [];\n\n// Compute current cycle info\nlet cycleInfo = calculateCycleDay(records);\n\nif (!cycleInfo.hasValidData) {\n    msg.payload = {\n        leds: Array(20).fill('#000000'),\n        has_prediction: false\n    };\n    return msg;\n}\n\n// Generate prediction for next 20 days\nlet leds = [];\nfor (let i = 0; i < 20; i++) {\n    let futureDay = ((cycleInfo.cycleDay + i - 1) % 28) + 1;\n\n    if (cycleInfo.inPeriod && i === 0) {\n        leds.push(getPeriodColor(cycleInfo.cycleDay));\n    } else {\n        leds.push(getPeriodColor(futureDay));\n    }\n}\n\nmsg.payload = {\n    leds: leds,\n    has_prediction: true,\n    current_cycle_day: cycleInfo.cycleDay,\n    in_period: cycleInfo.inPeriod\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 240,
+        "wires": [
+            [
+                "1f2d5af7.4ef405"
+            ]
+        ]
+    },
+    {
+        "id": "1f2d5af7.4ef405",
+        "type": "ui_template",
+        "z": "9be2c3e6.2c064",
+        "group": "ec41e4dc.e3e598",
+        "name": "LED Ring Display",
+        "order": 1,
+        "width": "6",
+        "height": "10",
+        "format": "<style>\n    .led-ring {\n        position: relative;\n        width: 200px;\n        height: 200px;\n        margin: 20px auto;\n    }\n\n    .led {\n        position: absolute;\n        width: 12px;\n        height: 12px;\n        border-radius: 50%;\n        transform-origin: 100px 100px;\n    }\n\n    .legend {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        gap: 10px;\n        margin-top: 20px;\n    }\n\n    .legend-item {\n        display: flex;\n        align-items: center;\n        gap: 8px;\n    }\n\n    .legend-color {\n        width: 12px;\n        height: 12px;\n        border-radius: 50%;\n    }\n\n    .message-box {\n        margin-top: 20px;\n        padding: 15px;\n        text-align: center;\n        font-size: 16px;\n        line-height: 1.5;\n    }\n</style>\n\n<div ng-init=\"init()\">\n    <div class=\"led-ring\">\n        <div ng-repeat=\"led in msg.payload.leds track by $index\" class=\"led\" ng-style=\"{\n                 'background-color': led,\n                 'transform': 'rotate(' + ($index * 18) + 'deg) translate(100px)'\n             }\">\n        </div>\n    </div>\n\n    <div ng-if=\"msg.payload.has_prediction\">\n        <p style=\"text-align: center; font-size: 18px;\">Current cycle day {{msg.payload.current_cycle_day}}</p>\n\n        <div class=\"legend\">\n            <div class=\"legend-item\">\n                <div class=\"legend-color\" style=\"background-color: #f47c7c\"></div>\n                <span>Menstrual period</span>\n            </div>\n            <div class=\"legend-item\">\n                <div class=\"legend-color\" style=\"background-color: #a1de93\"></div>\n                <span>Follicular phase</span>\n            </div>\n            <div class=\"legend-item\">\n                <div class=\"legend-color\" style=\"background-color: #f7f48b\"></div>\n                <span>Ovulation phase</span>\n            </div>\n            <div class=\"legend-item\">\n                <div class=\"legend-color\" style=\"background-color: #70a1d7\"></div>\n                <span>Luteal phase</span>\n            </div>\n        </div>\n\n        <div class=\"message-box\">\n            <p ng-if=\"msg.payload.current_cycle_day <= 6\">🌕 Take it slow today. Rest and self-care are just as\n                productive.</p>\n            <p ng-if=\"msg.payload.current_cycle_day > 6 && msg.payload.current_cycle_day <= 13\">🌱 You're full of energy\n                and focus—great time for high-impact tasks or workouts!</p>\n            <p ng-if=\"msg.payload.current_cycle_day > 13 && msg.payload.current_cycle_day <= 16\">🌟 You may feel\n                confident and social—perfect for teamwork or sharing ideas.</p>\n            <p ng-if=\"msg.payload.current_cycle_day > 16\">🍂 Listen to your body and prioritize balance. It's okay to\n                slow the pace.</p>\n        </div>\n    </div>\n\n    <p ng-if=\"!msg.payload.has_prediction\" style=\"text-align: center\">No prediction data</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 140,
+        "wires": [
+            [
+                "4ac68caa.1d2dc4"
+            ]
+        ]
+    },
+    {
+        "id": "4ac68caa.1d2dc4",
+        "type": "mqtt out",
+        "z": "9be2c3e6.2c064",
+        "name": "LED Ring Control",
+        "topic": "led/ring",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "33c9266d.3feaea",
+        "x": 890,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "84fa69a2.9e2fc8",
+        "type": "inject",
+        "z": "9be2c3e6.2c064",
+        "name": "Daily Update",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 200,
+        "wires": [
+            [
+                "158234a.756a8cb"
+            ]
+        ]
+    },
+    {
+        "id": "51dded40.710024",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Forward",
+        "group": "94f2ce2b.4eca2",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "↑",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"action\": \"forward\", \"state\": \"press\"}",
+        "payloadType": "json",
+        "topic": "robot_control",
+        "topicType": "str",
+        "x": 100,
+        "y": 1100,
+        "wires": [
+            [
+                "d47ff4f1.249928"
+            ]
+        ]
+    },
+    {
+        "id": "4f152f35.166d2",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Left",
+        "group": "94f2ce2b.4eca2",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "←",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"action\": \"left\", \"state\": \"press\"}",
+        "payloadType": "json",
+        "topic": "robot_control",
+        "topicType": "str",
+        "x": 100,
+        "y": 1180,
+        "wires": [
+            [
+                "d47ff4f1.249928"
+            ]
+        ]
+    },
+    {
+        "id": "c1e719be.9dc268",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Right",
+        "group": "94f2ce2b.4eca2",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "→",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"action\": \"right\", \"state\": \"press\"}",
+        "payloadType": "json",
+        "topic": "robot_control",
+        "topicType": "str",
+        "x": 100,
+        "y": 1220,
+        "wires": [
+            [
+                "d47ff4f1.249928"
+            ]
+        ]
+    },
+    {
+        "id": "6de437c6.bea7c8",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Backward",
+        "group": "94f2ce2b.4eca2",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "↓",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"action\": \"backward\", \"state\": \"press\"}",
+        "payloadType": "json",
+        "topic": "robot_control",
+        "topicType": "str",
+        "x": 100,
+        "y": 1140,
+        "wires": [
+            [
+                "d47ff4f1.249928"
+            ]
+        ]
+    },
+    {
+        "id": "d47ff4f1.249928",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "Process Robot Control",
+        "func": "// Initialize movement state if not exists\nlet movementState = flow.get('movement_state') || {\n    isMoving: false,\n    pressStartTime: 0,\n    pressEndTime: 0\n};\n\nif (msg.topic === 'robot_control' && msg.payload) {\n    const { action, state } = msg.payload;\n    const currentTime = Date.now();\n    \n    // Handle button release - stop the robot\n    if (state === 'release') {\n        movementState.pressEndTime = currentTime;\n        const pressDuration = movementState.pressEndTime - movementState.pressStartTime;\n        \n        // For all actions, stop movement when button is released\n        msg.payload = { linear: 0.0, angular: 0.0 };\n        movementState.isMoving = false;\n        \n        // For left/right turns with short press (less than 500ms)\n        // We don't need special handling as the turn has already been executed\n        \n        flow.set('movement_state', movementState);\n        msg.topic = 'cmd_vel';\n        return msg;\n    }\n    \n    // Handle button press\n    if (state === 'press') {\n        movementState.isMoving = true;\n        movementState.pressStartTime = currentTime;\n        \n        switch(action) {\n            case 'forward':\n                // Forward movement - maintain current orientation\n                msg.payload = { linear: 0.2, angular: 0.0 };\n                break;\n                \n            case 'backward':\n                // Backward movement - maintain current orientation\n                msg.payload = { linear: -0.2, angular: 0.0 };\n                break;\n                \n            case 'left':\n                // Left turn - only angular velocity\n                msg.payload = { linear: 0.0, angular: 0.5 };\n                break;\n                \n            case 'right':\n                // Right turn - only angular velocity\n                msg.payload = { linear: 0.0, angular: -0.5 };\n                break;\n        }\n        \n        flow.set('movement_state', movementState);\n        msg.topic = 'cmd_vel';\n        return msg;\n    }\n}\n\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Initialize movement state\nflow.set('movement_state', {\n    isMoving: false,\n    pressStartTime: 0,\n    pressEndTime: 0\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 1180,
+        "wires": [
+            [
+                "9aab5846.c6e3b8"
+            ]
+        ]
+    },
+    {
+        "id": "9aab5846.c6e3b8",
+        "type": "mqtt out",
+        "z": "9be2c3e6.2c064",
+        "name": "Robot Control Command",
+        "topic": "cmd_vel",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "69e107a8.164d98",
+        "x": 520,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "f46b5575.8b51b8",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Bed",
+        "group": "94f2ce2b.4eca2",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Bed",
+        "tooltip": "Move to Bed",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-map-marker",
+        "payload": "{\"gesture\": \"move\", \"position\": \"position1\"}",
+        "payloadType": "json",
+        "topic": "robot/command",
+        "topicType": "str",
+        "x": 510,
+        "y": 1280,
+        "wires": [
+            [
+                "e9b108a7.b07468"
+            ]
+        ]
+    },
+    {
+        "id": "4e171242.60393c",
+        "type": "ui_button",
+        "z": "9be2c3e6.2c064",
+        "name": "Toilet",
+        "group": "94f2ce2b.4eca2",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Toilet",
+        "tooltip": "Move to Toilet",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-map-marker",
+        "payload": "{\"gesture\": \"move\", \"position\": \"position2\"}",
+        "payloadType": "json",
+        "topic": "robot/command",
+        "topicType": "str",
+        "x": 510,
+        "y": 1320,
+        "wires": [
+            [
+                "e9b108a7.b07468"
+            ]
+        ]
+    },
+    {
+        "id": "e9b108a7.b07468",
+        "type": "mqtt out",
+        "z": "9be2c3e6.2c064",
+        "name": "Robot Command",
+        "topic": "robot/command",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "69e107a8.164d98",
+        "x": 720,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "d4dd156.c9e2de8",
+        "type": "mqtt in",
+        "z": "9be2c3e6.2c064",
+        "name": "Position Status",
+        "topic": "robot/ack",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "69e107a8.164d98",
+        "nl": false,
+        "rap": false,
+        "x": 100,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad44b893.c2e178",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "File Operations",
+        "func": "const fs = require('fs');\nconst path = require('path');\nconst os = require('os');\n\n// Use absolute path\nconst DATA_DIR = path.join(os.homedir(), '.node-red', 'data');\nconst RECORDS_FILE = path.join(DATA_DIR, 'records.json');\n\n// Ensure data directory exists\nif (!fs.existsSync(DATA_DIR)) {\n    fs.mkdirSync(DATA_DIR);\n}\n\n// Read data\nfunction loadRecords() {\n    try {\n        if (fs.existsSync(RECORDS_FILE)) {\n            const data = fs.readFileSync(RECORDS_FILE, 'utf8');\n            const records = JSON.parse(data);\n            node.log(`Successfully loaded ${records.length} records from file`);\n            return records;\n        }\n    } catch (error) {\n        node.error(`Error loading records: ${error.message}`);\n    }\n    return [];\n}\n\n// Save data\nfunction saveRecords(records) {\n    try {\n        fs.writeFileSync(RECORDS_FILE, JSON.stringify(records, null, 2));\n        node.log(`Successfully saved ${records.length} records to file`);\n    } catch (error) {\n        node.error(`Error saving records: ${error.message}`);\n    }\n}\n\n// Export functions for use by other nodes\nglobal.set('loadRecords', loadRecords);\nglobal.set('saveRecords', saveRecords);\n\n// Return empty message on first run\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 100,
+        "y": 1440,
+        "wires": [
+            [
+                "539adfe7.d4313"
+            ]
+        ]
+    },
+    {
+        "id": "539adfe7.d4313",
+        "type": "function",
+        "z": "9be2c3e6.2c064",
+        "name": "Initialize Records",
+        "func": "// Load data when flow starts\nconst loadRecords = global.get('loadRecords');\nif (loadRecords) {\n    const records = loadRecords();\n    flow.set('records', records);\n    node.log('Records loaded from file');\n}\n\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    }
+]
